@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- 主機： 127.0.0.1
--- 產生時間： 2020-06-04 14:12:24
+-- 產生時間： 2020-06-04 14:25:05
 -- 伺服器版本： 10.4.11-MariaDB
 -- PHP 版本： 7.4.4
 
@@ -29,8 +29,10 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `comments` (
   `id` int(32) NOT NULL,
+  `likes` int(4) DEFAULT NULL,
   `comment` varchar(1024) CHARACTER SET utf8 NOT NULL,
-  `post_id` int(32) NOT NULL
+  `post_id` int(32) NOT NULL,
+  `comment_account` varchar(32) CHARACTER SET utf8 NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
