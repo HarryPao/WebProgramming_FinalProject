@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Login</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <style>
+        .header {
+            padding: 170px 30px 80px;
+            background-image: url(img/sky.png);
+            background-size: cover;
+            background-position-y: -600px;
+        }
+
+        .contact {
+            padding: 80px 0 150px;
+            /*padding: 上 左右 下;*/
+        }
+
+        .contact-form {
+            width: 50%;
+            margin: 50px auto 0;
+            /*margin: 上 左右 下*/
+            /*padding-left: 200px;*/
+            /*離左邊多少*/
+        }
+
+            .contact-form input[type=text] {
+                display: block;
+                width: 100%;
+                margin-bottom: 10px;
+                /*中間空多少*/
+                padding: 15px;
+                /*內距多少*/
+                border: 1px solid rgba(255,255,255,0.4);
+                border-radius: 0;
+                /*數字越大，角就會越圓*/
+                background-color: rgba(255,255,255,0.05);
+                color: #fff;
+            }
+
+            /*.contact-form textarea {
+                height: 150px;
+            }*/
+
+            .contact-form input[type=submit] {
+                display: block;
+                width: 200px;
+                margin: 40px auto 0;
+                padding: 15px;
+                border: 1px solid rgba(255,255,255,0.4);
+                border-radius: 5px;
+                background-color: transparent;
+                color: rgba(255,255,255,0.6);
+                cursor: pointer;
+                /*變成有一個手在那邊*/
+            }
+
+                .contact-form input[type=submit]:hover {
+                    background-color: rgba(255,255,255,0.05);
+                    /*hover 就是滑鼠碰到的時候會變顏色*/
+                }
+
+        /*body {
+            background-image: url(icon/sky.png);
+            background-size: cover;
+            padding: 170px 30px 80px;
+          
+            background-position-y: -600px;
+        }*/
+
+
+        .site-title-sub {
+            margin: 0 0 30px;
+            letter-spacing: 1px;
+            font-size: 2.2rem;
+        }
+
+            .site-title-sub::before,
+            .site-title-sub::after {
+                content: '';
+                display: inline-block;
+                width: 140px;
+                height: 2px;
+                margin: 0 30px;
+                background-color: #fff;
+                vertical-align: middle;
+            }
+
+        .site-title {
+            margin: 50px 0 40px;
+            font-size: 7.6rem;
+        }
+
+        .site-description {
+            margin-bottom: 50px;
+            color: #888;
+            font-size: 1.6rem;
+        }
+
+        .button {
+            display: inline-block;
+            width: 200px;
+            padding: 20px;
+            border-radius: 4px;
+            background-color: #afa58d;
+            color: #fff;
+            text-decoration: none;
+            letter-spacing: 1px;
+            font-size: 1.2rem;
+        }
+
+            .button:hover {
+                opacity: 0.9;
+            }
+
+
+
+        p {
+            font-family: Kozuka Mincho Pr6N H;
+            font-size: 20pt;
+            color: #FF4500;
+            /*color: #000000;*/
+        }
+
+        h2 {
+            font-family: Kozuka Mincho Pr6N H;
+            font-size: 50pt;
+            color: #FF4500;
+
+            /*color: #000000;*/
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <a href="aboutus3.html">
+                Kipi
+                <span>
+                    By Pao&Jenny
+                </span>
+            </a>
+
+        </div>
+
+    </header>
+   <!-- <section class="contact" id="contact">-->
+
+        <!--<h2 class="heading" align="center"><p>LOGIN</p></h2>-->
+    <header class="header">
+        <!--<p class="site-title-sub" align="center">Master's Favorite</p>
+    <h1 class="site-title" align="center">Life is Trip</h1>
+    <p class="site-description" align="center">Welcome to My Web</p>-->
+        <form class="contact-form" align="center">
+            <h2 class="heading" align="center"><p>LOGIN</p></h2>
+            <input type="text" name="account" placeholder="ACCOUNT"><br /><br />
+            <input type="text" name="password" placeholder="PASSWORD">
+            <input type="submit" value="LOGIN">
+            <input type="submit" value="Register">
+
+
+
+        </form>
+    </header>
+        <!--<form class="contact-form" align="center">
+            <input type="text" name="account" placeholder="ACCOUNT"><br /><br />
+            <input type="text" name="password" placeholder="PASSWORD">
+            <input type="submit" value="LOGIN">
+            <input type="submit" value="Register">
+
+
+
+        </form>-->
+
+    <!--</section>-->
+</body>
+</html>
+
+
+
+
+
+
+
